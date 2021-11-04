@@ -1,5 +1,10 @@
 import avatar from '../assets/images/image-jeremy.png';
 import iconWork from '../assets/images/icon-work.svg';
+import iconPlay from '../assets/images/icon-play.svg';
+import iconStudy from '../assets/images/icon-study.svg';
+import iconExercise from '../assets/images/icon-exercise.svg';
+import iconSocial from '../assets/images/icon-social.svg';
+import iconSelfCare from '../assets/images/icon-self-care.svg';
 
 export const user = {
   name: 'Jeremy Robson',
@@ -26,7 +31,7 @@ export const user = {
     },
     play: {
       name: 'play',
-      img: 'src/assets/images/icon-play.svg',
+      img: iconPlay,
       color: '#56c2e6',
       period: {
         daily: {
@@ -45,7 +50,7 @@ export const user = {
     },
     study: {
       name: 'study',
-      img: 'src/assets/images/icon-study.svg',
+      img: iconStudy,
       color: '#ff5c7c',
       period: {
         daily: {
@@ -64,7 +69,7 @@ export const user = {
     },
     exercise: {
       name: 'exercise',
-      img: 'src/assets/images/icon-exercise.svg',
+      img: iconExercise,
       color: '#4acf81',
       period: {
         daily: {
@@ -83,7 +88,7 @@ export const user = {
     },
     social: {
       name: 'social',
-      img: 'src/assets/images/icon-social.svg',
+      img: iconSocial,
       color: '#7536d3',
       period: {
         daily: {
@@ -102,7 +107,7 @@ export const user = {
     },
     selfCare: {
       name: 'self care',
-      img: 'src/assets/images/icon-self-care.svg',
+      img: iconSelfCare,
       color: '#f1c65b',
       period: {
         daily: {
