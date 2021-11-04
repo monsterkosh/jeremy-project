@@ -18,14 +18,17 @@ export const user = {
         daily: {
           hours: 5,
           lastPeriod: 7,
+          name: 'daily',
         },
         weekly: {
           hours: 32,
           lastPeriod: 36,
+          name: 'weekly',
         },
         monthly: {
           hours: 103,
           lastPeriod: 128,
+          name: 'monthly',
         },
       },
     },
@@ -37,14 +40,17 @@ export const user = {
         daily: {
           hours: 1,
           lastPeriod: 2,
+          name: 'daily',
         },
         weekly: {
           hours: 10,
           lastPeriod: 8,
+          name: 'weekly',
         },
         monthly: {
           hours: 23,
           lastPeriod: 29,
+          name: 'monthly',
         },
       },
     },
@@ -56,14 +62,17 @@ export const user = {
         daily: {
           hours: 0,
           lastPeriod: 1,
+          name: 'daily',
         },
         weekly: {
           hours: 4,
           lastPeriod: 7,
+          name: 'weekly',
         },
         monthly: {
           hours: 13,
           lastPeriod: 19,
+          name: 'monthly',
         },
       },
     },
@@ -75,14 +84,17 @@ export const user = {
         daily: {
           hours: 1,
           lastPeriod: 1,
+          name: 'daily',
         },
         weekly: {
           hours: 4,
           lastPeriod: 5,
+          name: 'weekly',
         },
         monthly: {
           hours: 11,
           lastPeriod: 18,
+          name: 'monthly',
         },
       },
     },
@@ -94,14 +106,17 @@ export const user = {
         daily: {
           hours: 1,
           lastPeriod: 3,
+          name: 'daily',
         },
         weekly: {
           hours: 5,
           lastPeriod: 10,
+          name: 'weekly',
         },
         monthly: {
           hours: 21,
           lastPeriod: 23,
+          name: 'monthly',
         },
       },
     },
@@ -113,14 +128,17 @@ export const user = {
         daily: {
           hours: 0,
           lastPeriod: 1,
+          name: 'daily',
         },
         weekly: {
           hours: 2,
           lastPeriod: 2,
+          name: 'weekly',
         },
         monthly: {
           hours: 7,
           lastPeriod: 11,
+          name: 'monthly',
         },
       },
     },
