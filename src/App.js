@@ -1,10 +1,8 @@
-import CardGroup from "./components/CardGroup/CardGroup";
-
 function App() {
   return (
     <div className='App'>
       <header className='App-header'>
-        <CardGroup />
+        <div>Hi bitches !</div>
       </header>
     </div>
   );
