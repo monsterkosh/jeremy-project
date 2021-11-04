@@ -1,0 +1,15 @@
+.card-group__container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 100%;
+    width: 50%;
+    gap: 20px;
+    
+}
+
+@media (max-width: 480px){
+    .card-group__container {
+        display: flex;
+        flex-direction: column;        
+    }
+  }
