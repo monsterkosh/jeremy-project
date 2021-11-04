@@ -7,7 +7,6 @@
 .Profile {
   display: flex;
   padding: 1.5rem 2rem;
-
   border-radius: 1rem;
   background-color: var(--blue);
 }
@@ -15,14 +14,12 @@
 .ProfileAvatar {
   display: block;
   width: 4rem;
-
   border: 3px solid var(--white);
   border-radius: 100%;
 }
 
 .ProfileText p {
   margin: 0 0 0.5rem 0;
-
   font-family: var(--font-def);
   font-size: 0.7rem;
   color: var(--pale-blue);
@@ -35,7 +32,6 @@
 
 .ProfileText h2 {
   margin: 0;
-
   font-family: var(--font-def);
   font-size: 1rem;
   font-weight: 500;
@@ -48,7 +44,6 @@
 
 .Controller button {
   display: block;
-
   color: var(--blue);
   font-family: var(--font-def);
   font-size: 0.9rem;
@@ -93,7 +88,6 @@
 
   .ProfileText h2 {
     margin: 0 0 1rem 0;
-
     font-size: 1.5rem;
   }
 
