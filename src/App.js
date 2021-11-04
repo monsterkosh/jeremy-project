@@ -1,9 +1,9 @@
+import Layout from './components/Layout/Layout';
+
 function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <div>Hi bitches !</div>
-      </header>
+    <div className="App">
+      <Layout />
     </div>
   );
 }
