@@ -10,14 +10,14 @@ p, h1, h2, h3 {
     color: #fff;
 }
 
-.card-container{
+.card_container{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     height: 300px;
 }
 
-.card-small {
+.card_small {
     background-color: var(--dark-blue);
     border-radius: 16px;
     width: 100%;
@@ -25,48 +25,48 @@ p, h1, h2, h3 {
     overflow: hidden;
 }
 
-.card-small:hover {
+.card_small:hover {
     cursor: pointer;
     background-color: var(--blue);
 }
 
-.card-small .card-main,
-.card-imageHover .card-main{
+.card_small .card_main,
+.card_imageHover .card_main{
     margin: 20px;
     display: flex;
     justify-content: space-between;
 }
 
-.card-title {
+.card_title {
     font-size: 18px;
   }
 
-  .card-image {
+  .card_image {
     height: 5px;
     width: 20px;
     margin-left: 10px;
   }
-  .card-image:hover {
+  .card_image:hover {
     transform: scale(1.5);
     cursor: pointer;
   }
 
-  .card-details {
+  .card_details {
     margin: 20px;
   }
 
-  .card-currentTime {
+  .card_currentTime {
     font-size: 40px;
   }
 
-  .card-previousTime {
+  .card_previousTime {
     font-size: 14px;
     color: #988ffb;
     margin: 10px 0;
   }
 
   @media (max-width: 768px) {
-    .card-details {
+    .card_details {
       display: flex;
       justify-content: space-between;
     }

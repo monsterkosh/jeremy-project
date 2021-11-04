@@ -1,4 +1,4 @@
-.card-group__container {
+.card_group__container {
     display: grid;
     grid-template-columns: auto auto auto;
     height: 100%;
@@ -8,7 +8,7 @@
 }
 
 @media (max-width: 480px){
-    .card-group__container {
+    .card_group__container {
         display: flex;
         flex-direction: column;        
     }
