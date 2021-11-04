@@ -1,0 +1,69 @@
+.UserController {
+  max-width: 18rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: var(--dark-blue);
+}
+
+.Profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 2rem;
+
+  border-radius: 1rem;
+  background-color: var(--blue);
+}
+
+.ProfileAvatar {
+  display: block;
+  width: 4rem;
+  margin-right: 2rem;
+  border: 3px solid var(--white);
+  border-radius: 100%;
+}
+
+.ProfileText p {
+  margin: 0 0 0.5rem 0;
+
+  font-family: var(--font-def);
+  font-size: 0.7rem;
+  color: var(--pale-blue);
+  font-weight: 400;
+}
+
+.ProfileText p::first-letter {
+  text-transform: uppercase;
+}
+
+.ProfileText h2 {
+  margin: 0;
+
+  font-family: var(--font-def);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.Controller {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+}
+
+.Controller button {
+  display: block;
+
+  color: var(--blue);
+  font-family: var(--font-def);
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  border: none;
+  background-color: transparent;
+}
+
+.Controller button:hover,
+.Controller button:focus,
+.Controller button.active {
+  color: var(--white);
+}
