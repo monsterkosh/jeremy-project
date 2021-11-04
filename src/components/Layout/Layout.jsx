@@ -1,28 +1,26 @@
 import React from 'react';
 import style from './layout.module.css';
-import CardGroup from '../CardGroup/CardGroup.js';
-import Card from '../Cards/Card';
 import { user } from '../../data/data';
-import avatar from '../../assets/images/image-jeremy.png';
 
 const Layout = () => {
-  // const [schedule, setSchedule] = useState();
-  // let dailySchedule = {};
-  // let weeklySchedule = {};
-  // let monthlySchedule = {};
-
-  console.log(user.avatar);
-
-  let variable = user.avatar;
+  console.log(user);
 
   return (
     <div className={style.container}>
-      <div>layout</div>
-      <img className={style.img_style} src={variable} alt="" />
-      {/* <p>{data.user.name}</p> */}
-      {/*       
-      <CardGroup />
-      <Card /> */}
+      <div>Layout Page</div>
+      <p>Username: {user.name}</p>
+      <div>
+        Avatar: <img className={style.img_style} src={user.avatar} alt="" />
+      </div>
+      <h1>Schedule</h1>
+      <ul>
+        Title: {user.schedule.work.name}
+        <ul>
+          <li>Period: {user.schedule.work.period.daily.name}</li>
+          <ol> Hours: {user.schedule.work.period.daily.hours}hrs</ol>
+          <ol> Last Hours {user.schedule.work.period.daily.lastPeriod}hrs</ol>
+        </ul>
+      </ul>
     </div>
   );
 };
