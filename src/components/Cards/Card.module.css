@@ -38,7 +38,7 @@ p, h1, h2, h3 {
 }
 
 .card_title {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .card_image {
@@ -56,11 +56,11 @@ p, h1, h2, h3 {
   }
 
   .card_currentTime {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 
   .card_previousTime {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #988ffb;
     margin: 10px 0;
   }
@@ -69,6 +69,10 @@ p, h1, h2, h3 {
     .card_details {
       display: flex;
       justify-content: space-between;
+    }
+
+    .card_container {
+      height: 150px;
     }
   }
 

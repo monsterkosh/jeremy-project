@@ -7,7 +7,7 @@ import style from './Card.module.css';
 const Card = ({title, hours, lasthours}) => {
 
     return (
-        <div className={`${style.card} ${style.card_container} ${style.title}`}>
+        <div className={`${style.card} ${style.card_container} ${style[title]}`}>
             <div className={style.card_small}>
                 <div className={style.card_main}>
                     <h3 className={style.card_title}>{title}</h3>
