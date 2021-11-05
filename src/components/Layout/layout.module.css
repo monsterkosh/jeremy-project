@@ -1,37 +1,33 @@
 .container {
-    width: 100%;
-    min-height: 100vh;
-    background-color: var(--very-dark-blue);
-    color: var(--white);
-    padding: 60px 30px;
-    box-sizing: border-box;
-    
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+  padding: 60px 30px;
+  box-sizing: border-box;
 }
 
 .cardgroup_wrapper {
-    height: 100%;
-    width: 100%;
-    margin-top: 40px;
+  height: 100%;
+  width: 100%;
+  margin-top: 40px;
 }
 
 @media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    height: 100vh;
+  }
 
-    .container {
-        display: flex;
-        height: 100vh;
-    }
+  .cardgroup_wrapper {
+    flex-basis: 75%;
+    margin-top: 0px;
+    height: 100%;
+  }
 
-    .cardgroup_wrapper {
-        flex-basis: 75%;
-        margin-top: 0px;
-        background-color: blue;
-        height: 100%;
-    }
-
-    .usercontroller_wrapper {
-    flex-basis: 25% ;
-    position:relative;
-    /* height: 100%; */
-    background-color: red;
-}
+  .usercontroller_wrapper {
+    flex-basis: 25%;
+    position: relative;
+    margin-right: 2rem;
+  }
 }

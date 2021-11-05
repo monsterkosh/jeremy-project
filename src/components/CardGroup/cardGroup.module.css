@@ -1,13 +1,14 @@
 .card_group__container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 20px; 
-    grid-template-rows: 1fr 1fr;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  height: 100%;
+  grid-template-rows: 1fr 1fr;
 }
 
-@media (max-width: 768px){
-    .card_group__container {
-        display: flex;
-        flex-direction: column;       
-    }
+@media (max-width: 768px) {
+  .card_group__container {
+    display: flex;
+    flex-direction: column;
   }
+}
