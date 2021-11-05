@@ -1,0 +1,102 @@
+@import url(../../styles/globalStyles.css);
+
+p, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    border-radius: 20px;
+    color: #fff;
+}
+
+.card_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 300px;
+}
+
+.card_small {
+    background-color: var(--dark-blue);
+    border-radius: 16px;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.card_small:hover {
+    cursor: pointer;
+    background-color: var(--blue);
+}
+
+.card_small .card_main,
+.card_imageHover .card_main{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_title {
+    font-size: 1.125rem;
+  }
+
+  .card_image {
+    height: 5px;
+    width: 20px;
+    margin-left: 10px;
+  }
+  .card_image:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+  }
+
+  .card_details {
+    margin: 20px;
+  }
+
+  .card_currentTime {
+    font-size: 2.5rem;
+  }
+
+  .card_previousTime {
+    font-size: 0.875rem;
+    color: #988ffb;
+    margin: 10px 0;
+  }
+
+  @media (max-width: 768px) {
+    .card_details {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .card_container {
+      height: 150px;
+    }
+  }
+
+  .work {
+    background: url(../../assets/cards/icon-work.a3f124e5.svg) no-repeat right 10px top -12px,
+      var(--work);
+  }
+  .play {
+    background: url(../../assets/cards/icon-play.e8d4e569.svg) no-repeat right 10px top -12px,
+      var(--play);
+  }
+  .study {
+    background: url(../../assets/cards/icon-study.1f0a65e4.svg) no-repeat right 10px top -12px,
+      var(--study);
+  }
+  .exercise {
+    background: url(../../assets/cards/icon-exercise.3e7b0282.svg) no-repeat right 10px top -2px,
+      var(--exercise);
+  }
+  .social {
+    background: url(../../assets/cards/icon-social.64be0c18.svg) no-repeat right 10px top -12px,
+      var(--social);
+  }
+  .self-care {
+    background: url(../../assets/cards/icon-self-care.a161aff5.svg) no-repeat right 10px top -12px,
+      var(--selfcare);
+  }
