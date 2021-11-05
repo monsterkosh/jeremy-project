@@ -1,9 +1,10 @@
+import Layout from './components/Layout/Layout';
+import './styles/globalStyles.css';
+
 function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <div>Hi bitches !</div>
-      </header>
+    <div className="App">
+      <Layout />
     </div>
   );
 }
