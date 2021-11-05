@@ -22,12 +22,16 @@ const Layout = () => {
 
   return (
     <div className={style.container}>
-      <UserController
-        avatar={user.avatar}
-        name={user.name}
-        handler={handleVista}
-      />
-      <CardGroup cards={props} />
+      <div className={style.usercontroller_wrapper}>
+        <UserController
+          avatar={user.avatar}
+          name={user.name}
+          handler={handleVista}
+        />
+      </div>
+      <div className={style.cardgroup_wrapper}>
+        <CardGroup cards={props} />
+      </div>
     </div>
   );
 };
