@@ -77,9 +77,12 @@
 
 /* Desktop */
 @media screen and (min-width: 768px) {
+  .UserController {
+    height: 100%;
+  }
+
   .Profile {
     flex-direction: column;
-    height: 100%;
   }
 
   .ProfileAvatar {
