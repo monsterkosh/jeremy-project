@@ -1,26 +1,59 @@
-import React from 'react';
+import React, { useState } from 'react';
 import style from './layout.module.css';
 import { user } from '../../data/data';
+import CardGroup from '../CardGroup/CardGroup';
+import UserController from '../UserController/UserController';
 
 const Layout = () => {
+  const [vista, setVista] = useState('daily');
+
+  const handleVista = (props) => {
+    setVista(props);
+  };
+
   console.log(user);
+
+  let props = [
+    {
+      title: user.schedule.exercise.name,
+      hours: user.schedule.exercise.period[vista].hours,
+      lasthours: user.schedule.exercise.period[vista].lastPeriod,
+    },
+    {
+      title: user.schedule.work.name,
+      hours: user.schedule.work.period[vista].hours,
+      lasthours: user.schedule.work.period[vista].lastPeriod,
+    },
+    {
+      title: user.schedule.play.name,
+      hours: user.schedule.play.period[vista].hours,
+      lasthours: user.schedule.play.period[vista].lastPeriod,
+    },
+    {
+      title: user.schedule.selfCare.name,
+      hours: user.schedule.selfCare.period[vista].hours,
+      lasthours: user.schedule.selfCare.period[vista].lastPeriod,
+    },
+    {
+      title: user.schedule.social.name,
+      hours: user.schedule.social.period[vista].hours,
+      lasthours: user.schedule.social.period[vista].lastPeriod,
+    },
+    {
+      title: user.schedule.study.name,
+      hours: user.schedule.study.period[vista].hours,
+      lasthours: user.schedule.study.period[vista].lastPeriod,
+    },
+  ];
 
   return (
     <div className={style.container}>
-      <div>Layout Page</div>
-      <p>Username: {user.name}</p>
-      <div>
-        Avatar: <img className={style.img_style} src={user.avatar} alt="" />
-      </div>
-      <h1>Schedule</h1>
-      <ul>
-        Title: {user.schedule.work.name}
-        <ul>
-          <li>Period: {user.schedule.work.period.daily.name}</li>
-          <ol> Hours: {user.schedule.work.period.daily.hours}hrs</ol>
-          <ol> Last Hours {user.schedule.work.period.daily.lastPeriod}hrs</ol>
-        </ul>
-      </ul>
+      <UserController
+        avatar={user.avatar}
+        name={user.name}
+        handler={handleVista}
+      />
+      <CardGroup cards={props} />
     </div>
   );
 };
