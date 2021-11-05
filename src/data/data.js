@@ -17,17 +17,15 @@ export const user = {
       period: {
         daily: {
           hours: '5hrs',
-          lastPeriod: 'last day 7hrs',
+          lastPeriod: 'last day - 7hrs',
         },
         weekly: {
-          hours: 32,
-          lastPeriod: 36,
-          name: 'week',
+          hours: '32hrs',
+          lastPeriod: 'last week - 36hrs',
         },
         monthly: {
-          hours: 103,
-          lastPeriod: 128,
-          name: 'month',
+          hours: '103hrs',
+          lastPeriod: 'last month - 128hrs',
         },
       },
     },
@@ -37,19 +35,16 @@ export const user = {
       color: '#56c2e6',
       period: {
         daily: {
-          hours: 1,
-          lastPeriod: 2,
-          name: 'day',
+          hours: '1hrs',
+          lastPeriod: 'last day - 2hrs',
         },
         weekly: {
-          hours: 10,
-          lastPeriod: 8,
-          name: 'week',
+          hours: '10hrs',
+          lastPeriod: 'last week - 8hrs',
         },
         monthly: {
-          hours: 23,
-          lastPeriod: 29,
-          name: 'month',
+          hours: '23hrs',
+          lastPeriod: 'last month - 29hrs',
         },
       },
     },
@@ -59,19 +54,16 @@ export const user = {
       color: '#ff5c7c',
       period: {
         daily: {
-          hours: 0,
-          lastPeriod: 1,
-          name: 'day',
+          hours: '0hrs',
+          lastPeriod: 'last day - 1hrs',
         },
         weekly: {
-          hours: 4,
-          lastPeriod: 7,
-          name: 'week',
+          hours: '4hrs',
+          lastPeriod: 'last week - 7hrs',
         },
         monthly: {
-          hours: 13,
-          lastPeriod: 19,
-          name: 'month',
+          hours: '13hrs',
+          lastPeriod: 'last month - 19hrs',
         },
       },
     },
@@ -81,19 +73,16 @@ export const user = {
       color: '#4acf81',
       period: {
         daily: {
-          hours: 1,
-          lastPeriod: 1,
-          name: 'day',
+          hours: '1hrs',
+          lastPeriod: 'last day - 1hrs',
         },
         weekly: {
-          hours: 4,
-          lastPeriod: 5,
-          name: 'week',
+          hours: '4hrs',
+          lastPeriod: 'last week - 5hrs',
         },
         monthly: {
-          hours: 11,
-          lastPeriod: 18,
-          name: 'month',
+          hours: '11hrs',
+          lastPeriod: 'last month - 18hrs',
         },
       },
     },
@@ -103,19 +92,16 @@ export const user = {
       color: '#7536d3',
       period: {
         daily: {
-          hours: 1,
-          lastPeriod: 3,
-          name: 'day',
+          hours: '1hrs',
+          lastPeriod: 'last day - 3hrs',
         },
         weekly: {
-          hours: 5,
-          lastPeriod: 10,
-          name: 'week',
+          hours: '5hrs',
+          lastPeriod: 'last week - 10hrs',
         },
         monthly: {
-          hours: 21,
-          lastPeriod: 23,
-          name: 'month',
+          hours: '21hrs',
+          lastPeriod: 'last month - 23hrs',
         },
       },
     },
@@ -125,19 +111,16 @@ export const user = {
       color: '#f1c65b',
       period: {
         daily: {
-          hours: 0,
-          lastPeriod: 1,
-          name: 'day',
+          hours: '0hrs',
+          lastPeriod: 'last day - 1hrs',
         },
         weekly: {
-          hours: 2,
-          lastPeriod: 2,
-          name: 'week',
+          hours: '2hrs',
+          lastPeriod: 'last week - 2hrs',
         },
         monthly: {
-          hours: 7,
-          lastPeriod: 11,
-          name: 'month',
+          hours: '7hrs',
+          lastPeriod: 'last month - 11hrs',
         },
       },
     },
