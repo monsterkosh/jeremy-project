@@ -17,17 +17,21 @@
   .container {
     display: flex;
     height: 100vh;
+    justify-content: center;
+    padding: 140px 0px;
   }
 
   .cardgroup_wrapper {
     flex-basis: 75%;
     margin-top: 0px;
     height: 100%;
+    max-width: 800px;
   }
 
   .usercontroller_wrapper {
     flex-basis: 25%;
     position: relative;
     margin-right: 2rem;
+
   }
 }
