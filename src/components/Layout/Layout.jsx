@@ -11,40 +11,14 @@ const Layout = () => {
     setVista(props);
   };
 
-  console.log(user);
-
-  let props = [
-    {
-      title: user.schedule.exercise.name,
-      hours: user.schedule.exercise.period[vista].hours,
-      lasthours: user.schedule.exercise.period[vista].lastPeriod,
-    },
-    {
-      title: user.schedule.work.name,
-      hours: user.schedule.work.period[vista].hours,
-      lasthours: user.schedule.work.period[vista].lastPeriod,
-    },
-    {
-      title: user.schedule.play.name,
-      hours: user.schedule.play.period[vista].hours,
-      lasthours: user.schedule.play.period[vista].lastPeriod,
-    },
-    {
-      title: user.schedule.selfCare.name,
-      hours: user.schedule.selfCare.period[vista].hours,
-      lasthours: user.schedule.selfCare.period[vista].lastPeriod,
-    },
-    {
-      title: user.schedule.social.name,
-      hours: user.schedule.social.period[vista].hours,
-      lasthours: user.schedule.social.period[vista].lastPeriod,
-    },
-    {
-      title: user.schedule.study.name,
-      hours: user.schedule.study.period[vista].hours,
-      lasthours: user.schedule.study.period[vista].lastPeriod,
-    },
-  ];
+  let props = [];
+  for (let item in user.schedule) {
+    props.push({
+      title: user.schedule[item].name,
+      hours: user.schedule[item].period[vista].hours,
+      lasthours: user.schedule[item].period[vista].lastPeriod,
+    });
+  }
 
   return (
     <div className={style.container}>
