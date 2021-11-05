@@ -14,7 +14,7 @@ const CardGroup = ({cards = [{title: "work", hours: "2hs", lasthours: "5hs"},{ti
 }
 
 CardGroup.propTypes = {
-    cards: PropTypes.array
-}
+  cards: PropTypes.array,
+};
 
-export default CardGroup
+export default CardGroup;

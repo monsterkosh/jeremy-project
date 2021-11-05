@@ -1,0 +1,97 @@
+.UserController {
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: var(--dark-blue);
+}
+
+.Profile {
+  display: flex;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  background-color: var(--blue);
+}
+
+.ProfileAvatar {
+  display: block;
+  width: 4rem;
+  border: 3px solid var(--white);
+  border-radius: 100%;
+}
+
+.ProfileText p {
+  margin: 0 0 0.5rem 0;
+  font-family: var(--font-def);
+  font-size: 0.7rem;
+  color: var(--pale-blue);
+  font-weight: 400;
+}
+
+.ProfileText p::first-letter {
+  text-transform: uppercase;
+}
+
+.ProfileText h2 {
+  margin: 0;
+  font-family: var(--font-def);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.Controller {
+  padding: 1.5rem 2rem;
+}
+
+.Controller button {
+  display: block;
+  color: var(--blue);
+  font-family: var(--font-def);
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  border: none;
+  background-color: transparent;
+}
+
+.Controller button:hover,
+.Controller button:focus,
+.Controller button.active {
+  color: var(--white);
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .Profile {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ProfileAvatar {
+    margin-right: 2rem;
+  }
+
+  .Controller {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .Profile {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .ProfileAvatar {
+    margin: 0 0 1.5rem 0;
+  }
+
+  .ProfileText h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  .Controller button:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}

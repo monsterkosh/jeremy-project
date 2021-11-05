@@ -1,11 +1,10 @@
-import CardGroup from "./components/CardGroup/CardGroup";
+import Layout from './components/Layout/Layout';
+import './styles/globalStyles.css';
 
 function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <CardGroup />
-      </header>
+    <div className="App">
+      <Layout />
     </div>
   );
 }
