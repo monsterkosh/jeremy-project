@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './UserController.module.css';
 
-function UserController({ avatar, name }) {
+function UserController({ avatar, name, handler }) {
   return (
     <div className={styles.UserController}>
       <div className={styles.Profile}>
@@ -12,9 +12,9 @@ function UserController({ avatar, name }) {
         </div>
       </div>
       <div className={styles.Controller}>
-        <button>daily</button>
-        <button>weekly</button>
-        <button>monthly</button>
+        <button onClick={() => handler('daily')}>daily</button>
+        <button onClick={() => handler('weekly')}>weekly</button>
+        <button onClick={() => handler('monthly')}>monthly</button>
       </div>
     </div>
   );

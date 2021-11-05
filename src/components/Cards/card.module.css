@@ -14,7 +14,6 @@ p, h1, h2, h3 {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 300px;
 }
 
 .card_small {
@@ -70,33 +69,29 @@ p, h1, h2, h3 {
       display: flex;
       justify-content: space-between;
     }
-
-    .card_container {
-      height: 150px;
-    }
   }
 
   .work {
-    background: url(../../assets/cards/icon-work.a3f124e5.svg) no-repeat right 10px top -12px,
+    background: url(../../assets/images/icon-work.svg) no-repeat right 10px top -12px,
       var(--work);
   }
   .play {
-    background: url(../../assets/cards/icon-play.e8d4e569.svg) no-repeat right 10px top -12px,
+    background: url(../../assets/images/icon-play.svg) no-repeat right 10px top -12px,
       var(--play);
   }
   .study {
-    background: url(../../assets/cards/icon-study.1f0a65e4.svg) no-repeat right 10px top -12px,
+    background: url(../../assets/images/icon-study.svg) no-repeat right 10px top -12px,
       var(--study);
   }
   .exercise {
-    background: url(../../assets/cards/icon-exercise.3e7b0282.svg) no-repeat right 10px top -2px,
+    background: url(../../assets/images/icon-exercise.svg) no-repeat right 10px top -2px,
       var(--exercise);
   }
   .social {
-    background: url(../../assets/cards/icon-social.64be0c18.svg) no-repeat right 10px top -12px,
+    background: url(../../assets/images/icon-social.svg) no-repeat right 10px top -12px,
       var(--social);
   }
-  .self-care {
-    background: url(../../assets/cards/icon-self-care.a161aff5.svg) no-repeat right 10px top -12px,
+  .selfcare {
+    background: url(../../assets/images/icon-self-care.svg) no-repeat right 10px top -12px,
       var(--selfcare);
   }

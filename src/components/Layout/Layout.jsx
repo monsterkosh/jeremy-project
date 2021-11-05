@@ -1,26 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import style from './layout.module.css';
 import { user } from '../../data/data';
+import CardGroup from '../CardGroup/CardGroup';
+import UserController from '../UserController/UserController';
 
 const Layout = () => {
-  console.log(user);
+  const [vista, setVista] = useState('daily');
+
+  const handleVista = (props) => {
+    setVista(props);
+  };
+
+  let props = [];
+  for (let item in user.schedule) {
+    props.push({
+      title: user.schedule[item].name,
+      hours: user.schedule[item].period[vista].hours,
+      lasthours: user.schedule[item].period[vista].lastPeriod,
+    });
+  }
 
   return (
     <div className={style.container}>
-      <div>Layout Page</div>
-      <p>Username: {user.name}</p>
-      <div>
-        Avatar: <img className={style.img_style} src={user.avatar} alt="" />
-      </div>
-      <h1>Schedule</h1>
-      <ul>
-        Title: {user.schedule.work.name}
-        <ul>
-          <li>Period: {user.schedule.work.period.daily.name}</li>
-          <ol> Hours: {user.schedule.work.period.daily.hours}hrs</ol>
-          <ol> Last Hours {user.schedule.work.period.daily.lastPeriod}hrs</ol>
-        </ul>
-      </ul>
+      <UserController
+        avatar={user.avatar}
+        name={user.name}
+        handler={handleVista}
+      />
+      <CardGroup cards={props} />
     </div>
   );
 };
