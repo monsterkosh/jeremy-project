@@ -1,11 +1,7 @@
-# The Jeremy Robson Time Tracking Project
+# MyTeams
 
 This project was created by: 
-- Nicolas Martin
-- Mauricio Garavaglia
-- Gaston Benitez
-- Alejo Vera
-- Joaquin Bruhn
+- Analia Mancuso
 - Emiliano Franco
 
 
