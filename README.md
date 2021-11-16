@@ -1,8 +1,12 @@
 # MyTeams
 
 This project was created by: 
-- Analia Mancuso
-- Emiliano Franco
+- Mauricio Garavaglia
+- Nicolas Martin
+- Joaquin Bruhn
+- Alejo Vera
+- Gaston Benitez
+- Emiliano Franco (Team Leader)
 
 
 ## Scripts
